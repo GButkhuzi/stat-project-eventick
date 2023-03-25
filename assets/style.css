@@ -135,8 +135,12 @@ button {
 header {
   position: relative;
   margin-top: 5px;
-  width: 1440px;
+  width: -moz-max-content;
+  width: max-content;
+  width: 100%;
+  max-width: 1440px;
   height: 720px;
+  background-color: bisque;
 }
 
 .background-pic-one {
@@ -153,7 +157,6 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* background-color: rgb(255, 228, 196, 0.2); */
 }
 
 .header-container > h2 > img {
@@ -177,7 +180,6 @@ header {
 .header-container > ul {
   display: flex;
   align-items: center;
-  /* justify-content: space-around; */
   list-style: none;
   gap: 38px;
   font-style: normal;
@@ -212,7 +214,6 @@ header {
   padding-right: 177px;
   display: flex;
   align-items: center;
-  /* background-color: rgb(205, 189, 169); */
   padding-top: 80px;
   position: absolute;
   top: 11%;
@@ -253,13 +254,14 @@ header {
 .buttons > :first-child {
   background: #F5167E;
   margin-right: 20px;
+  margin-bottom: 20px;
 }
 
 .buttons > :last-child {
   border: 1.5px solid #FFFFFF;
 }
 
-/* ------------------------------------- */
+/* create search box */
 .search-box {
   height: 140px;
   width: 1086px;
@@ -298,6 +300,7 @@ header {
   background-color: #242565;
 }
 
+/* create card section */
 .card-section {
   max-width: 1440px;
   width: 100%;
